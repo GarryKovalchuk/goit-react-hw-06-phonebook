@@ -3,7 +3,7 @@ import './ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContacts, addContact } from '../../redux/slice';
 
-export const ContactForm = ({ onSubmit }) => {
+export const ContactForm = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const contacts = useSelector(getContacts);
